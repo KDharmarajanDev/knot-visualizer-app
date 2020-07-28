@@ -15,6 +15,9 @@
 		B36FF4DE24CCF1C50046BD39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36FF4DC24CCF1C50046BD39 /* LaunchScreen.storyboard */; };
 		B36FF4E924CCF1C50046BD39 /* Knot_VisualizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF4E824CCF1C50046BD39 /* Knot_VisualizerTests.swift */; };
 		B36FF4F424CCF1C50046BD39 /* Knot_VisualizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF4F324CCF1C50046BD39 /* Knot_VisualizerUITests.swift */; };
+		B36FF50624CF7BE90046BD39 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF50524CF7BE90046BD39 /* SideBarTableViewController.swift */; };
+		B36FF50924CF7DDA0046BD39 /* Knot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF50824CF7DDA0046BD39 /* Knot.swift */; };
+		B36FF50B24CF84160046BD39 /* KnotState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF50A24CF84160046BD39 /* KnotState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		B36FF4EF24CCF1C50046BD39 /* Knot VisualizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Knot VisualizerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36FF4F324CCF1C50046BD39 /* Knot_VisualizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knot_VisualizerUITests.swift; sourceTree = "<group>"; };
 		B36FF4F524CCF1C50046BD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36FF50524CF7BE90046BD39 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
+		B36FF50824CF7DDA0046BD39 /* Knot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knot.swift; sourceTree = "<group>"; };
+		B36FF50A24CF84160046BD39 /* KnotState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		B36FF4D024CCF1C40046BD39 /* Knot Visualizer */ = {
 			isa = PBXGroup;
 			children = (
+				B36FF50724CF7C8B0046BD39 /* Knots */,
+				B36FF50424CF7B7A0046BD39 /* UIElements */,
 				B36FF4D124CCF1C40046BD39 /* AppDelegate.swift */,
 				B36FF4D324CCF1C40046BD39 /* art.scnassets */,
 				B36FF4D524CCF1C40046BD39 /* ViewController.swift */,
@@ -126,6 +134,23 @@
 				B36FF4F524CCF1C50046BD39 /* Info.plist */,
 			);
 			path = "Knot VisualizerUITests";
+			sourceTree = "<group>";
+		};
+		B36FF50424CF7B7A0046BD39 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				B36FF50524CF7BE90046BD39 /* SideBarTableViewController.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		B36FF50724CF7C8B0046BD39 /* Knots */ = {
+			isa = PBXGroup;
+			children = (
+				B36FF50824CF7DDA0046BD39 /* Knot.swift */,
+				B36FF50A24CF84160046BD39 /* KnotState.swift */,
+			);
+			path = Knots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36FF4D624CCF1C40046BD39 /* ViewController.swift in Sources */,
+				B36FF50B24CF84160046BD39 /* KnotState.swift in Sources */,
+				B36FF50924CF7DDA0046BD39 /* Knot.swift in Sources */,
+				B36FF50624CF7BE90046BD39 /* SideBarTableViewController.swift in Sources */,
 				B36FF4D224CCF1C40046BD39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

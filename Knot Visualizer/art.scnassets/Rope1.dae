@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.83.2 commit date:2020-07-09, commit time:05:50, hash:239fbf7d936f</authoring_tool>
+    </contributor>
+    <created>2020-07-25T15:54:53</created>
+    <modified>2020-07-25T15:54:53</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.03786791 0.1908592 1 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="Material-material" name="Material">
+      <instance_effect url="#Material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="BezierCurve_001-mesh" name="BezierCurve.001">
+      <mesh>
+        <source id="BezierCurve_001-mesh-positions">
+          <float_array id="BezierCurve_001-mesh-positions-array" count="72">-1 0.07794225 0.04499995 -1 0.04500001 0.07794225 -1 0 0.08999997 -1 -0.04499989 0.07794231 -1 -0.07794225 0.04500001 -1 -0.08999997 0 -1 -0.07794231 -0.04499989 -1 -0.04500007 -0.07794219 -1 0 -0.08999997 -1 0.04499989 -0.07794231 -1 0.07794219 -0.04500001 -1 0.08999997 0 1 0.07794225 0.04499995 1 0.04500001 0.07794225 1 0 0.08999997 1 -0.04499989 0.07794231 1 -0.07794225 0.04500001 1 -0.08999997 0 1 -0.07794231 -0.04499989 1 -0.04500007 -0.07794219 1 0 -0.08999997 1 0.04499989 -0.07794231 1 0.07794219 -0.04500001 1 0.08999997 0</float_array>
+          <technique_common>
+            <accessor source="#BezierCurve_001-mesh-positions-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="BezierCurve_001-mesh-normals">
+          <float_array id="BezierCurve_001-mesh-normals-array" count="36">0 0.8660317 0.4999893 0 1 0 0 0.4999893 0.8660317 0 0 1 0 -0.4999893 0.8660317 0 -0.8660317 0.4999893 0 -1 0 0 -0.8660317 -0.4999893 0 -0.4999893 -0.8660317 0 0 -1 0 0.4999893 -0.8660317 0 0.8660317 -0.4999893</float_array>
+          <technique_common>
+            <accessor source="#BezierCurve_001-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="BezierCurve_001-mesh-map-0">
+          <float_array id="BezierCurve_001-mesh-map-0-array" count="144">1 1 0 0.9166667 0 1 1 0.08333331 0 0 0 0.08333331 1 0.1666666 0 0.08333331 0 0.1666666 1 0.25 0 0.1666666 0 0.25 1 0.3333333 0 0.25 0 0.3333333 1 0.4166666 0 0.3333333 0 0.4166666 1 0.5 0 0.4166666 0 0.5 1 0.5833333 0 0.5 0 0.5833333 1 0.6666667 0 0.5833333 0 0.6666667 1 0.75 0 0.6666667 0 0.75 1 0.8333333 0 0.75 0 0.8333333 1 0.9166667 0 0.8333333 0 0.9166667 1 1 1 0.9166667 0 0.9166667 1 0.08333331 1 0 0 0 1 0.1666666 1 0.08333331 0 0.08333331 1 0.25 1 0.1666666 0 0.1666666 1 0.3333333 1 0.25 0 0.25 1 0.4166666 1 0.3333333 0 0.3333333 1 0.5 1 0.4166666 0 0.4166666 1 0.5833333 1 0.5 0 0.5 1 0.6666667 1 0.5833333 0 0.5833333 1 0.75 1 0.6666667 0 0.6666667 1 0.8333333 1 0.75 0 0.75 1 0.9166667 1 0.8333333 0 0.8333333</float_array>
+          <technique_common>
+            <accessor source="#BezierCurve_001-mesh-map-0-array" count="72" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="BezierCurve_001-mesh-vertices">
+          <input semantic="POSITION" source="#BezierCurve_001-mesh-positions"/>
+        </vertices>
+        <triangles material="Material-material" count="24">
+          <input semantic="VERTEX" source="#BezierCurve_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#BezierCurve_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#BezierCurve_001-mesh-map-0" offset="2" set="0"/>
+          <p>12 0 0 11 1 1 0 0 2 13 2 3 0 0 4 1 2 5 14 3 6 1 2 7 2 3 8 15 4 9 2 3 10 3 4 11 16 5 12 3 4 13 4 5 14 17 6 15 4 5 16 5 6 17 18 7 18 5 6 19 6 7 20 19 8 21 6 7 22 7 8 23 20 9 24 7 8 25 8 9 26 21 10 27 8 9 28 9 10 29 22 11 30 9 10 31 10 11 32 23 1 33 10 11 34 11 1 35 12 0 36 23 1 37 11 1 38 13 2 39 12 0 40 0 0 41 14 3 42 13 2 43 1 2 44 15 4 45 14 3 46 2 3 47 16 5 48 15 4 49 3 4 50 17 6 51 16 5 52 4 5 53 18 7 54 17 6 55 5 6 56 19 8 57 18 7 58 6 7 59 20 9 60 19 8 61 7 8 62 21 10 63 20 9 64 8 9 65 22 11 66 21 10 67 9 10 68 23 1 69 22 11 70 10 11 71</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="BezierCurve_001" name="BezierCurve.001" type="NODE">
+        <matrix sid="transform">1 0 0 -0.109185 0 1 0 -0.1608098 0 0 1 0.1554773 0 0 0 1</matrix>
+        <instance_geometry url="#BezierCurve_001-mesh" name="BezierCurve.001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material-material" target="#Material-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

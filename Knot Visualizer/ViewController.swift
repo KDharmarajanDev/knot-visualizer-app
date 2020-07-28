@@ -12,7 +12,14 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
+    //ARView Outlets
     @IBOutlet var sceneView: ARSCNView!
+    
+    //SideBar Outlets
+    @IBOutlet weak var leadingConst: NSLayoutConstraint!
+    
+    //SideBar Properties
+    var isSideMenuExtended : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +28,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        sceneView.showsStatistics = false
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene(named: "art.scnassets/Rope1.dae")!
         
         // Set the scene to the view
         sceneView.scene = scene
@@ -71,5 +78,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
+    }
+    
+    @IBAction func didTapMenu(){
+        if (isSideMenuExtended) {
+            leadingConst.constant = -200
+            UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseIn, animations: {
+                self.view.layoutIfNeeded()
+            })
+        } else {
+            leadingConst.constant = 0
+            UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseIn, animations: {
+                self.view.layoutIfNeeded()
+            })
+        }
+        isSideMenuExtended = !isSideMenuExtended
     }
 }
