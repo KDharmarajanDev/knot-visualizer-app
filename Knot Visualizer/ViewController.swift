@@ -10,16 +10,12 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
 
     //ARView Outlets
     @IBOutlet var sceneView: ARSCNView!
     
-    //SideBar Outlets
-    @IBOutlet weak var leadingConst: NSLayoutConstraint!
-    
-    //SideBar Properties
-    var isSideMenuExtended : Bool = false
+    var sideBar : SideBar = SideBar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +31,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the scene to the view
         sceneView.scene = scene
+        sceneView.isUserInteractionEnabled = true
+        
+        setupSideBar()
+        setupTapGesture()
+    }
+    
+    func setupSideBar() {
+        sideBar = SideBar(sourceView: self.view, sideBarItems: [Knot([], UIImage(named: "download.jpg")!, "Square Knot")])
+        sideBar.delegate = self
+    }
+    
+    func setupTapGesture() {
+        let oneFingerTapGestureRecognizer : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleARViewTap))
+        oneFingerTapGestureRecognizer.numberOfTapsRequired = 1
+        oneFingerTapGestureRecognizer.numberOfTouchesRequired = 1
+        sceneView.addGestureRecognizer(oneFingerTapGestureRecognizer)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -80,18 +92,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
+    func sideBarDidSelectButtonAtIndex(index: Int) {
+        
+    }
+    
     @IBAction func didTapMenu(){
-        if (isSideMenuExtended) {
-            leadingConst.constant = -200
-            UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseIn, animations: {
-                self.view.layoutIfNeeded()
-            })
-        } else {
-            leadingConst.constant = 0
-            UIView.animate(withDuration: 0.3, delay: 0.1, options: .curveEaseIn, animations: {
-                self.view.layoutIfNeeded()
-            })
+        sideBar.showSideBar(!sideBar.isSideBarOpen)
+    }
+    
+    @objc func handleARViewTap(recognizer : UITapGestureRecognizer){
+        if sideBar.isSideBarOpen {
+            sideBar.showSideBar(false)
         }
-        isSideMenuExtended = !isSideMenuExtended
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3620DC924D0B8B100B662C3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3620DC824D0B8B100B662C3 /* Extension.swift */; };
+		B3620DCB24D0B99D00B662C3 /* KnotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */; };
+		B3620DCD24D0E5F800B662C3 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3620DCC24D0E5F800B662C3 /* SideBar.swift */; };
+		B3620DD524D0FB4700B662C3 /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3620DD424D0FB4700B662C3 /* download.jpg */; };
 		B36FF4D224CCF1C40046BD39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF4D124CCF1C40046BD39 /* AppDelegate.swift */; };
 		B36FF4D424CCF1C40046BD39 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B36FF4D324CCF1C40046BD39 /* art.scnassets */; };
 		B36FF4D624CCF1C40046BD39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF4D524CCF1C40046BD39 /* ViewController.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B3620DC824D0B8B100B662C3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotTableViewCell.swift; sourceTree = "<group>"; };
+		B3620DCC24D0E5F800B662C3 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		B3620DD424D0FB4700B662C3 /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
 		B36FF4CE24CCF1C40046BD39 /* Knot Visualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Knot Visualizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36FF4D124CCF1C40046BD39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B36FF4D324CCF1C40046BD39 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -82,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3620DD124D0FAEA00B662C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3620DD424D0FB4700B662C3 /* download.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B36FF4C524CCF1C40046BD39 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +121,7 @@
 		B36FF4D024CCF1C40046BD39 /* Knot Visualizer */ = {
 			isa = PBXGroup;
 			children = (
+				B3620DD124D0FAEA00B662C3 /* Resources */,
 				B36FF50724CF7C8B0046BD39 /* Knots */,
 				B36FF50424CF7B7A0046BD39 /* UIElements */,
 				B36FF4D124CCF1C40046BD39 /* AppDelegate.swift */,
@@ -140,6 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				B36FF50524CF7BE90046BD39 /* SideBarTableViewController.swift */,
+				B3620DC824D0B8B100B662C3 /* Extension.swift */,
+				B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */,
+				B3620DCC24D0E5F800B662C3 /* SideBar.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -258,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36FF4D424CCF1C40046BD39 /* art.scnassets in Resources */,
+				B3620DD524D0FB4700B662C3 /* download.jpg in Resources */,
 				B36FF4DE24CCF1C50046BD39 /* LaunchScreen.storyboard in Resources */,
 				B36FF4DB24CCF1C50046BD39 /* Assets.xcassets in Resources */,
 				B36FF4D924CCF1C40046BD39 /* Main.storyboard in Resources */,
@@ -287,7 +308,10 @@
 			files = (
 				B36FF4D624CCF1C40046BD39 /* ViewController.swift in Sources */,
 				B36FF50B24CF84160046BD39 /* KnotState.swift in Sources */,
+				B3620DCD24D0E5F800B662C3 /* SideBar.swift in Sources */,
 				B36FF50924CF7DDA0046BD39 /* Knot.swift in Sources */,
+				B3620DC924D0B8B100B662C3 /* Extension.swift in Sources */,
+				B3620DCB24D0B99D00B662C3 /* KnotTableViewCell.swift in Sources */,
 				B36FF50624CF7BE90046BD39 /* SideBarTableViewController.swift in Sources */,
 				B36FF4D224CCF1C40046BD39 /* AppDelegate.swift in Sources */,
 			);

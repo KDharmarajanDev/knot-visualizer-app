@@ -8,28 +8,37 @@
 
 import UIKit
 
+protocol SideBarTableViewControllerDelegate {
+    func sideBarControlDidSelectRow(_ indexPath:IndexPath)
+}
+
 class SideBarTableViewController: UITableViewController {
     
+    var delegate : SideBarTableViewControllerDelegate?
     var items : Array<Knot> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(ProductCell.self, forCellReuseIdentifier: "cell")
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return items.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return items.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProductCell
+        cell.knot = items[indexPath.row]
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.sideBarControlDidSelectRow(indexPath)
     }
 }
