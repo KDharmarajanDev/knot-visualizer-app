@@ -17,7 +17,7 @@ import UIKit
 class SideBar: NSObject, SideBarTableViewControllerDelegate {
     
     let barWidth : CGFloat = 150.0
-    let sideBarTableViewTopInset : CGFloat = 64.0
+    let sideBarTableViewTopInset : CGFloat = 0
     let sideBarContainerView : UIView = UIView()
     let sideBarTableViewController : SideBarTableViewController = SideBarTableViewController()
     
@@ -29,13 +29,13 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
     override init() {
         super.init()
     }
-    
-    init(sourceView : UIView, sideBarItems: Array<Knot>){
+
+    init(sourceView : UIView, sideBarItems: Array<Knot>,_ navBarHeight : CGFloat?){
         super.init()
         originView = sourceView
         sideBarTableViewController.items = sideBarItems
         
-        setupSideBar()
+        setupSideBar(navBarHeight)
         
         animator = UIDynamicAnimator(referenceView: originView)
         
@@ -48,8 +48,8 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
         originView.addGestureRecognizer(hideGestureRecognizer)
     }
     
-    func setupSideBar() {
-        sideBarContainerView.frame = CGRect(x: -barWidth - 1, y: originView.frame.origin.y, width: barWidth, height: originView.frame.size.height)
+    func setupSideBar(_ navBarHeight : CGFloat?) {
+        sideBarContainerView.frame = CGRect(x: -barWidth - 1, y: navBarHeight!, width: barWidth, height: originView.frame.size.height - navBarHeight!)
         sideBarContainerView.backgroundColor = UIColor.clear
         sideBarContainerView.clipsToBounds = false
         
@@ -107,7 +107,7 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
         animator.addBehavior(sideBarBehavior)
     }
     
-    func sideBarControlDidSelectRow(_ indexPath: IndexPath) {
-        delegate?.sideBarDidSelectButtonAtIndex(index: indexPath.row)
+    func sideBarControlDidSelectSection(_ indexPath: IndexPath) {
+        delegate?.sideBarDidSelectButtonAtIndex(index: indexPath.section)
     }
 }

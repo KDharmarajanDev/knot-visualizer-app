@@ -15,6 +15,15 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
     //ARView Outlets
     @IBOutlet var sceneView: ARSCNView!
     
+    public var topDistance : CGFloat{
+         get{
+            let barHeight = navigationController?.navigationBar.frame.height ?? 0
+            let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+            let statusBarHeight = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+            return barHeight + statusBarHeight
+         }
+    }
+    
     var sideBar : SideBar = SideBar()
     
     override func viewDidLoad() {
@@ -38,7 +47,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
     }
     
     func setupSideBar() {
-        sideBar = SideBar(sourceView: self.view, sideBarItems: [Knot([], UIImage(named: "download.jpg")!, "Square Knot")])
+        sideBar = SideBar(sourceView: self.view, sideBarItems: [Knot([], UIImage(named: "download.jpg")!, "Square Knot")], topDistance)
         sideBar.delegate = self
     }
     

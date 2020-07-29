@@ -37,7 +37,7 @@ class ProductCell : UITableViewCell {
         super.backgroundColor = UIColor.white
         addSubview(knotImage)
         addSubview(knotNameLabel)
-
+        
         knotImage.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: nil, paddingTop: 5, paddingLeft: 5, paddingBottom: 5, paddingRight: 0, width: 90, height: 0, enableInsets: false)
         knotNameLabel.anchor(top: topAnchor, left: knotImage.rightAnchor, bottom: nil, right: nil, paddingTop: 20, paddingLeft: 10, paddingBottom: 0, paddingRight: 0, width: frame.size.width / 2, height: 0, enableInsets: false)
     }
