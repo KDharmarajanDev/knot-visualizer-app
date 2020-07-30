@@ -21,8 +21,7 @@ class SideBarTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.register(KnotCell.self, forCellReuseIdentifier: "cell")
         
-        tableView.estimatedRowHeight = 120.0
-        tableView.rowHeight = UITableView.automaticDimension
+        tableView.rowHeight = 130.0
     }
 
     // MARK: - Table view data source

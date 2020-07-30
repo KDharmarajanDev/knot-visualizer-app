@@ -48,7 +48,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
     
     func setupSideBar() {
         sideBar = SideBar(sourceView: self.view,
-                          sideBarItems: [Knot([], UIImage(named: "download.jpg")!, "Square Knot")], topDistance)
+                          sideBarItems: [Knot([], UIImage(named: "download.jpg")!, "Square Knot"),Knot([], UIImage(named: "download.jpg")!, "Test Knot")], topDistance)
         sideBar.delegate = self
     }
     

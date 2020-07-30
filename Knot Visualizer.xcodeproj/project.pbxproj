@@ -21,6 +21,7 @@
 		B36FF50624CF7BE90046BD39 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF50524CF7BE90046BD39 /* SideBarTableViewController.swift */; };
 		B36FF50924CF7DDA0046BD39 /* Knot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF50824CF7DDA0046BD39 /* Knot.swift */; };
 		B36FF50B24CF84160046BD39 /* KnotState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF50A24CF84160046BD39 /* KnotState.swift */; };
+		B370062C24D382A000AA4A9C /* KnotParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370062B24D382A000AA4A9C /* KnotParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B36FF50524CF7BE90046BD39 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
 		B36FF50824CF7DDA0046BD39 /* Knot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knot.swift; sourceTree = "<group>"; };
 		B36FF50A24CF84160046BD39 /* KnotState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotState.swift; sourceTree = "<group>"; };
+		B370062B24D382A000AA4A9C /* KnotParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				B36FF50824CF7DDA0046BD39 /* Knot.swift */,
 				B36FF50A24CF84160046BD39 /* KnotState.swift */,
+				B370062B24D382A000AA4A9C /* KnotParser.swift */,
 			);
 			path = Knots;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				B36FF50B24CF84160046BD39 /* KnotState.swift in Sources */,
 				B3620DCD24D0E5F800B662C3 /* SideBar.swift in Sources */,
 				B36FF50924CF7DDA0046BD39 /* Knot.swift in Sources */,
+				B370062C24D382A000AA4A9C /* KnotParser.swift in Sources */,
 				B3620DCB24D0B99D00B662C3 /* KnotTableViewCell.swift in Sources */,
 				B36FF50624CF7BE90046BD39 /* SideBarTableViewController.swift in Sources */,
 				B36FF4D224CCF1C40046BD39 /* AppDelegate.swift in Sources */,
