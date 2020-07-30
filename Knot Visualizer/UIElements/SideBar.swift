@@ -61,7 +61,7 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
         
         sideBarTableViewController.delegate = self
         sideBarTableViewController.tableView.frame = sideBarContainerView.bounds
-        sideBarTableViewController.tableView.clipsToBounds = false
+        sideBarTableViewController.tableView.clipsToBounds = true
         sideBarTableViewController.tableView.backgroundColor = UIColor.clear
         sideBarTableViewController.tableView.separatorStyle = .none
         sideBarTableViewController.tableView.scrollsToTop = false
@@ -108,6 +108,6 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
     }
     
     func sideBarControlDidSelectSection(_ indexPath: IndexPath) {
-        delegate?.sideBarDidSelectButtonAtIndex(index: indexPath.section)
+        delegate?.sideBarDidSelectButtonAtIndex(index: indexPath.row)
     }
 }

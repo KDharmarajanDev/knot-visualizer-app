@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3620DC924D0B8B100B662C3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3620DC824D0B8B100B662C3 /* Extension.swift */; };
 		B3620DCB24D0B99D00B662C3 /* KnotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */; };
 		B3620DCD24D0E5F800B662C3 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3620DCC24D0E5F800B662C3 /* SideBar.swift */; };
 		B3620DD524D0FB4700B662C3 /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3620DD424D0FB4700B662C3 /* download.jpg */; };
@@ -42,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B3620DC824D0B8B100B662C3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotTableViewCell.swift; sourceTree = "<group>"; };
 		B3620DCC24D0E5F800B662C3 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		B3620DD424D0FB4700B662C3 /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				B36FF50524CF7BE90046BD39 /* SideBarTableViewController.swift */,
-				B3620DC824D0B8B100B662C3 /* Extension.swift */,
 				B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */,
 				B3620DCC24D0E5F800B662C3 /* SideBar.swift */,
 			);
@@ -310,7 +307,6 @@
 				B36FF50B24CF84160046BD39 /* KnotState.swift in Sources */,
 				B3620DCD24D0E5F800B662C3 /* SideBar.swift in Sources */,
 				B36FF50924CF7DDA0046BD39 /* Knot.swift in Sources */,
-				B3620DC924D0B8B100B662C3 /* Extension.swift in Sources */,
 				B3620DCB24D0B99D00B662C3 /* KnotTableViewCell.swift in Sources */,
 				B36FF50624CF7BE90046BD39 /* SideBarTableViewController.swift in Sources */,
 				B36FF4D224CCF1C40046BD39 /* AppDelegate.swift in Sources */,
