@@ -13,6 +13,7 @@ class KnotParser : NSObject, XMLParserDelegate {
     var knotStates: Array<KnotState> = []
     var currElement : String = ""
     var currName : String = ""
+    var currKnotStateName : String = ""
     var currImgName : String = ""
     
     var fileName : String
@@ -22,10 +23,12 @@ class KnotParser : NSObject, XMLParserDelegate {
     }
     
     func parse(){
-        let xmlPath : URL = Bundle.main.url(forResource: fileName, withExtension: "xml")!
-        let xmlData : Data? = try? Data(contentsOf: xmlPath)
-        let parser : XMLParser = XMLParser(data: xmlData!)
-        parser.parse()
+        if let xmlURL : URL = Bundle.main.url(forResource: fileName, withExtension: "xml") {
+            if let parser : XMLParser = XMLParser(contentsOf: xmlURL) {
+                parser.delegate = self
+                parser.parse()
+            }
+        }
     }
     
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
@@ -34,23 +37,30 @@ class KnotParser : NSObject, XMLParserDelegate {
             knotStates = []
             currName = ""
             currImgName = ""
+            currKnotStateName = ""
         }
     }
     
     func parser(_ parser: XMLParser, foundCharacters string: String) {
+        let trimmedString : String = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         switch currElement {
         case "Knot":
-            currName = string
+            currName += trimmedString
         case "KnotState":
-            knotStates.append(KnotState(string))
+            currKnotStateName += trimmedString
         case "Thumbnail":
-            currImgName = string
+            currImgName += trimmedString
         default:
-            knotStates.append(KnotState(string))
+            currKnotStateName += trimmedString
         }
     }
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        knots.append(Knot(knotStates, UIImage(named: currImgName)! , currName))
+        if elementName == "Knot" {
+            knots.append(Knot(knotStates, UIImage(named: currImgName)! , currName))
+        } else if elementName == "KnotState" {
+            knotStates.append(KnotState(currKnotStateName))
+            currKnotStateName = ""
+        }
     }
 }

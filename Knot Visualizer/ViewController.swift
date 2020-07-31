@@ -15,6 +15,8 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
     //ARView Outlets
     @IBOutlet var sceneView: ARSCNView!
     
+    let nameOfKnotXMLFile : String = "Knots"
+    
     public var topDistance : CGFloat{
          get{
             let barHeight = navigationController?.navigationBar.frame.height ?? 0
@@ -47,8 +49,10 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
     }
     
     func setupSideBar() {
+        let parser : KnotParser = KnotParser(nameOfKnotXMLFile)
+        parser.parse()
         sideBar = SideBar(sourceView: self.view,
-                          sideBarItems: [Knot([], UIImage(named: "download.jpg")!, "Square Knot"),Knot([], UIImage(named: "download.jpg")!, "Test Knot")], topDistance)
+                          sideBarItems: parser.knots, topDistance)
         sideBar.delegate = self
     }
     

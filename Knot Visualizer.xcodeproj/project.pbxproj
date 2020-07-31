@@ -9,30 +9,36 @@
 /* Begin PBXBuildFile section */
 		B3620DCB24D0B99D00B662C3 /* KnotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */; };
 		B3620DCD24D0E5F800B662C3 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3620DCC24D0E5F800B662C3 /* SideBar.swift */; };
-		B3620DD524D0FB4700B662C3 /* download.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3620DD424D0FB4700B662C3 /* download.jpg */; };
+		B3620DD524D0FB4700B662C3 /* SquareKnot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3620DD424D0FB4700B662C3 /* SquareKnot.jpg */; };
 		B36FF4D224CCF1C40046BD39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF4D124CCF1C40046BD39 /* AppDelegate.swift */; };
 		B36FF4D424CCF1C40046BD39 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B36FF4D324CCF1C40046BD39 /* art.scnassets */; };
 		B36FF4D624CCF1C40046BD39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF4D524CCF1C40046BD39 /* ViewController.swift */; };
 		B36FF4D924CCF1C40046BD39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36FF4D724CCF1C40046BD39 /* Main.storyboard */; };
 		B36FF4DB24CCF1C50046BD39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36FF4DA24CCF1C50046BD39 /* Assets.xcassets */; };
 		B36FF4DE24CCF1C50046BD39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36FF4DC24CCF1C50046BD39 /* LaunchScreen.storyboard */; };
-		B36FF4E924CCF1C50046BD39 /* Knot_VisualizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF4E824CCF1C50046BD39 /* Knot_VisualizerTests.swift */; };
-		B36FF4F424CCF1C50046BD39 /* Knot_VisualizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF4F324CCF1C50046BD39 /* Knot_VisualizerUITests.swift */; };
 		B36FF50624CF7BE90046BD39 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF50524CF7BE90046BD39 /* SideBarTableViewController.swift */; };
 		B36FF50924CF7DDA0046BD39 /* Knot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF50824CF7DDA0046BD39 /* Knot.swift */; };
 		B36FF50B24CF84160046BD39 /* KnotState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF50A24CF84160046BD39 /* KnotState.swift */; };
 		B370062C24D382A000AA4A9C /* KnotParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370062B24D382A000AA4A9C /* KnotParser.swift */; };
+		B370062E24D393D700AA4A9C /* KnotParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370062D24D393D700AA4A9C /* KnotParserTest.swift */; };
+		B370063724D397DA00AA4A9C /* Bowline.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B370063624D397DA00AA4A9C /* Bowline.jpeg */; };
+		B370063924D3984900AA4A9C /* Sheepshank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B370063824D3984900AA4A9C /* Sheepshank.jpg */; };
+		B370063B24D3998400AA4A9C /* Knots.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370063A24D3998400AA4A9C /* Knots.xml */; };
+		B370063E24D399D600AA4A9C /* SquareKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370063D24D399D600AA4A9C /* SquareKnotTest.xml */; };
+		B370063F24D3DC2400AA4A9C /* SquareKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370063D24D399D600AA4A9C /* SquareKnotTest.xml */; };
+		B370064024D3DE6F00AA4A9C /* SquareKnot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3620DD424D0FB4700B662C3 /* SquareKnot.jpg */; };
+		B370064124D3DE7200AA4A9C /* Bowline.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B370063624D397DA00AA4A9C /* Bowline.jpeg */; };
+		B370064224D3DE7500AA4A9C /* Sheepshank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B370063824D3984900AA4A9C /* Sheepshank.jpg */; };
+		B370064424D47D0800AA4A9C /* BowlineKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064324D47D0800AA4A9C /* BowlineKnotTest.xml */; };
+		B370064624D4867700AA4A9C /* SheepshankKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064524D4867700AA4A9C /* SheepshankKnotTest.xml */; };
+		B370064824D4874500AA4A9C /* CombinedTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064724D4874500AA4A9C /* CombinedTest.xml */; };
+		B370064924D4874B00AA4A9C /* BowlineKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064324D47D0800AA4A9C /* BowlineKnotTest.xml */; };
+		B370064A24D4874E00AA4A9C /* SheepshankKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064524D4867700AA4A9C /* SheepshankKnotTest.xml */; };
+		B370064B24D4875000AA4A9C /* CombinedTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064724D4874500AA4A9C /* CombinedTest.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B36FF4E524CCF1C50046BD39 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B36FF4C624CCF1C40046BD39 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B36FF4CD24CCF1C40046BD39;
-			remoteInfo = "Knot Visualizer";
-		};
-		B36FF4F024CCF1C50046BD39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B36FF4C624CCF1C40046BD39 /* Project object */;
 			proxyType = 1;
@@ -44,7 +50,7 @@
 /* Begin PBXFileReference section */
 		B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotTableViewCell.swift; sourceTree = "<group>"; };
 		B3620DCC24D0E5F800B662C3 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
-		B3620DD424D0FB4700B662C3 /* download.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpg; sourceTree = "<group>"; };
+		B3620DD424D0FB4700B662C3 /* SquareKnot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SquareKnot.jpg; sourceTree = "<group>"; };
 		B36FF4CE24CCF1C40046BD39 /* Knot Visualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Knot Visualizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36FF4D124CCF1C40046BD39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B36FF4D324CCF1C40046BD39 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -54,15 +60,20 @@
 		B36FF4DD24CCF1C50046BD39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B36FF4DF24CCF1C50046BD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B36FF4E424CCF1C50046BD39 /* Knot VisualizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Knot VisualizerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B36FF4E824CCF1C50046BD39 /* Knot_VisualizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knot_VisualizerTests.swift; sourceTree = "<group>"; };
 		B36FF4EA24CCF1C50046BD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B36FF4EF24CCF1C50046BD39 /* Knot VisualizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Knot VisualizerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B36FF4F324CCF1C50046BD39 /* Knot_VisualizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knot_VisualizerUITests.swift; sourceTree = "<group>"; };
 		B36FF4F524CCF1C50046BD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B36FF50524CF7BE90046BD39 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarTableViewController.swift; sourceTree = "<group>"; };
 		B36FF50824CF7DDA0046BD39 /* Knot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knot.swift; sourceTree = "<group>"; };
 		B36FF50A24CF84160046BD39 /* KnotState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotState.swift; sourceTree = "<group>"; };
 		B370062B24D382A000AA4A9C /* KnotParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotParser.swift; sourceTree = "<group>"; };
+		B370062D24D393D700AA4A9C /* KnotParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotParserTest.swift; sourceTree = "<group>"; };
+		B370063624D397DA00AA4A9C /* Bowline.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bowline.jpeg; sourceTree = "<group>"; };
+		B370063824D3984900AA4A9C /* Sheepshank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sheepshank.jpg; sourceTree = "<group>"; };
+		B370063A24D3998400AA4A9C /* Knots.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Knots.xml; sourceTree = "<group>"; };
+		B370063D24D399D600AA4A9C /* SquareKnotTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SquareKnotTest.xml; sourceTree = "<group>"; };
+		B370064324D47D0800AA4A9C /* BowlineKnotTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BowlineKnotTest.xml; sourceTree = "<group>"; };
+		B370064524D4867700AA4A9C /* SheepshankKnotTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SheepshankKnotTest.xml; sourceTree = "<group>"; };
+		B370064724D4874500AA4A9C /* CombinedTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CombinedTest.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,20 +91,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B36FF4EC24CCF1C50046BD39 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B3620DD124D0FAEA00B662C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B3620DD424D0FB4700B662C3 /* download.jpg */,
+				B370063124D396DA00AA4A9C /* KnotStates */,
+				B370063024D396CF00AA4A9C /* Thumbnails */,
+				B370063A24D3998400AA4A9C /* Knots.xml */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -113,7 +119,6 @@
 			children = (
 				B36FF4CE24CCF1C40046BD39 /* Knot Visualizer.app */,
 				B36FF4E424CCF1C50046BD39 /* Knot VisualizerTests.xctest */,
-				B36FF4EF24CCF1C50046BD39 /* Knot VisualizerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,8 +143,9 @@
 		B36FF4E724CCF1C50046BD39 /* Knot VisualizerTests */ = {
 			isa = PBXGroup;
 			children = (
-				B36FF4E824CCF1C50046BD39 /* Knot_VisualizerTests.swift */,
+				B370063C24D399AD00AA4A9C /* KnotParserXMLFiles */,
 				B36FF4EA24CCF1C50046BD39 /* Info.plist */,
+				B370062D24D393D700AA4A9C /* KnotParserTest.swift */,
 			);
 			path = "Knot VisualizerTests";
 			sourceTree = "<group>";
@@ -147,7 +153,6 @@
 		B36FF4F224CCF1C50046BD39 /* Knot VisualizerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B36FF4F324CCF1C50046BD39 /* Knot_VisualizerUITests.swift */,
 				B36FF4F524CCF1C50046BD39 /* Info.plist */,
 			);
 			path = "Knot VisualizerUITests";
@@ -171,6 +176,34 @@
 				B370062B24D382A000AA4A9C /* KnotParser.swift */,
 			);
 			path = Knots;
+			sourceTree = "<group>";
+		};
+		B370063024D396CF00AA4A9C /* Thumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				B370063824D3984900AA4A9C /* Sheepshank.jpg */,
+				B370063624D397DA00AA4A9C /* Bowline.jpeg */,
+				B3620DD424D0FB4700B662C3 /* SquareKnot.jpg */,
+			);
+			path = Thumbnails;
+			sourceTree = "<group>";
+		};
+		B370063124D396DA00AA4A9C /* KnotStates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = KnotStates;
+			sourceTree = "<group>";
+		};
+		B370063C24D399AD00AA4A9C /* KnotParserXMLFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B370063D24D399D600AA4A9C /* SquareKnotTest.xml */,
+				B370064324D47D0800AA4A9C /* BowlineKnotTest.xml */,
+				B370064524D4867700AA4A9C /* SheepshankKnotTest.xml */,
+				B370064724D4874500AA4A9C /* CombinedTest.xml */,
+			);
+			path = KnotParserXMLFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,24 +244,6 @@
 			productReference = B36FF4E424CCF1C50046BD39 /* Knot VisualizerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B36FF4EE24CCF1C50046BD39 /* Knot VisualizerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B36FF4FE24CCF1C50046BD39 /* Build configuration list for PBXNativeTarget "Knot VisualizerUITests" */;
-			buildPhases = (
-				B36FF4EB24CCF1C50046BD39 /* Sources */,
-				B36FF4EC24CCF1C50046BD39 /* Frameworks */,
-				B36FF4ED24CCF1C50046BD39 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B36FF4F124CCF1C50046BD39 /* PBXTargetDependency */,
-			);
-			name = "Knot VisualizerUITests";
-			productName = "Knot VisualizerUITests";
-			productReference = B36FF4EF24CCF1C50046BD39 /* Knot VisualizerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -243,10 +258,6 @@
 						CreatedOnToolsVersion = 11.5;
 					};
 					B36FF4E324CCF1C50046BD39 = {
-						CreatedOnToolsVersion = 11.5;
-						TestTargetID = B36FF4CD24CCF1C40046BD39;
-					};
-					B36FF4EE24CCF1C50046BD39 = {
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = B36FF4CD24CCF1C40046BD39;
 					};
@@ -267,7 +278,6 @@
 			targets = (
 				B36FF4CD24CCF1C40046BD39 /* Knot Visualizer */,
 				B36FF4E324CCF1C50046BD39 /* Knot VisualizerTests */,
-				B36FF4EE24CCF1C50046BD39 /* Knot VisualizerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,10 +288,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B36FF4D424CCF1C40046BD39 /* art.scnassets in Resources */,
-				B3620DD524D0FB4700B662C3 /* download.jpg in Resources */,
+				B3620DD524D0FB4700B662C3 /* SquareKnot.jpg in Resources */,
+				B370063924D3984900AA4A9C /* Sheepshank.jpg in Resources */,
 				B36FF4DE24CCF1C50046BD39 /* LaunchScreen.storyboard in Resources */,
 				B36FF4DB24CCF1C50046BD39 /* Assets.xcassets in Resources */,
+				B370064A24D4874E00AA4A9C /* SheepshankKnotTest.xml in Resources */,
+				B370063F24D3DC2400AA4A9C /* SquareKnotTest.xml in Resources */,
+				B370064924D4874B00AA4A9C /* BowlineKnotTest.xml in Resources */,
+				B370064B24D4875000AA4A9C /* CombinedTest.xml in Resources */,
 				B36FF4D924CCF1C40046BD39 /* Main.storyboard in Resources */,
+				B370063724D397DA00AA4A9C /* Bowline.jpeg in Resources */,
+				B370063B24D3998400AA4A9C /* Knots.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +306,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B36FF4ED24CCF1C50046BD39 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B370064124D3DE7200AA4A9C /* Bowline.jpeg in Resources */,
+				B370064424D47D0800AA4A9C /* BowlineKnotTest.xml in Resources */,
+				B370064024D3DE6F00AA4A9C /* SquareKnot.jpg in Resources */,
+				B370064624D4867700AA4A9C /* SheepshankKnotTest.xml in Resources */,
+				B370063E24D399D600AA4A9C /* SquareKnotTest.xml in Resources */,
+				B370064224D3DE7500AA4A9C /* Sheepshank.jpg in Resources */,
+				B370064824D4874500AA4A9C /* CombinedTest.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,15 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B36FF4E924CCF1C50046BD39 /* Knot_VisualizerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B36FF4EB24CCF1C50046BD39 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B36FF4F424CCF1C50046BD39 /* Knot_VisualizerUITests.swift in Sources */,
+				B370062E24D393D700AA4A9C /* KnotParserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,11 +349,6 @@
 			isa = PBXTargetDependency;
 			target = B36FF4CD24CCF1C40046BD39 /* Knot Visualizer */;
 			targetProxy = B36FF4E524CCF1C50046BD39 /* PBXContainerItemProxy */;
-		};
-		B36FF4F124CCF1C50046BD39 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B36FF4CD24CCF1C40046BD39 /* Knot Visualizer */;
-			targetProxy = B36FF4F024CCF1C50046BD39 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -562,46 +566,6 @@
 			};
 			name = Release;
 		};
-		B36FF4FF24CCF1C50046BD39 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3T5QANZJYJ;
-				INFOPLIST_FILE = "Knot VisualizerUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "mathematician.Knot-VisualizerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Knot Visualizer";
-			};
-			name = Debug;
-		};
-		B36FF50024CCF1C50046BD39 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3T5QANZJYJ;
-				INFOPLIST_FILE = "Knot VisualizerUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "mathematician.Knot-VisualizerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Knot Visualizer";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -628,15 +592,6 @@
 			buildConfigurations = (
 				B36FF4FC24CCF1C50046BD39 /* Debug */,
 				B36FF4FD24CCF1C50046BD39 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B36FF4FE24CCF1C50046BD39 /* Build configuration list for PBXNativeTarget "Knot VisualizerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B36FF4FF24CCF1C50046BD39 /* Debug */,
-				B36FF50024CCF1C50046BD39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

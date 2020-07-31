@@ -1,0 +1,8 @@
+<Knots>
+  <Knot> Square Knot
+      <Thumbnail>SquareKnot.jpg</Thumbnail>
+      <KnotState>State1.jpg</KnotState>
+      <KnotState>State2.jpg</KnotState>
+      <KnotState>State3.jpg</KnotState>
+  </Knot>
+</Knots>

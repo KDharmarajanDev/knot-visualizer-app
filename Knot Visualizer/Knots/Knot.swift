@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class Knot {
+class Knot : Equatable {
     
     var knotStates : Array<KnotState> = []
     var currIndex : Int
@@ -19,5 +19,18 @@ class Knot {
         self.knotStates = knotStates
         self.thumbnail = thumbnail
         self.name = name
+    }
+    
+    static func == (lhs : Knot, rhs : Knot) -> Bool {
+        if lhs.knotStates.count == rhs.knotStates.count {
+            for (i, knotState) in lhs.knotStates.enumerated() {
+                if knotState != rhs.knotStates[i] {
+                    return false
+                }
+            }
+        } else {
+            return false
+        }
+        return lhs.thumbnail == rhs.thumbnail && lhs.name == rhs.name
     }
 }

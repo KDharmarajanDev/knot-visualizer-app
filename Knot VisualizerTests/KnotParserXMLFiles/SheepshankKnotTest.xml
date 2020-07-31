@@ -1,0 +1,12 @@
+<Knots>
+  <Knot> Sheepshank Knot
+      <Thumbnail>Sheepshank.jpg</Thumbnail>
+      <KnotState>State1.jpg</KnotState>
+      <KnotState>State2.jpg</KnotState>
+      <KnotState>State3.jpg</KnotState>
+      <KnotState>State4.jpg</KnotState>
+      <KnotState>State5.jpg</KnotState>
+  </Knot>
+</Knots>
+
+

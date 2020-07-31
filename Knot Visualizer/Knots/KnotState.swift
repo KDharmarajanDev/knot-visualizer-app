@@ -5,7 +5,7 @@
 //  Created by Karthik Dharmarajan on 7/27/20.
 //  Copyright © 2020 Karthik Dharmarajan. All rights reserved.
 //
-class KnotState {
+class KnotState : Equatable {
     
     var nameOfModel : String
     
@@ -13,4 +13,7 @@ class KnotState {
         self.nameOfModel = nameOfModel
     }
     
+    static func == (lhs: KnotState, rhs: KnotState) -> Bool {
+        return lhs.nameOfModel == rhs.nameOfModel
+    }
 }
