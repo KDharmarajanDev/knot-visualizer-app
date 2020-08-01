@@ -10,8 +10,8 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
-
+class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate, UIGestureRecognizerDelegate, KnotStateEditorDelegate {
+    
     //ARView Outlets
     @IBOutlet var sceneView: ARSCNView!
     
@@ -27,6 +27,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
     }
     
     var sideBar : SideBar = SideBar()
+    var knotStateEditor : KnotStateEditorAndPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,16 +37,11 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = false
-        
-        // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/Rope1.dae")!
-        
-        // Set the scene to the view
-        sceneView.scene = scene
         sceneView.isUserInteractionEnabled = true
         
         setupSideBar()
         setupTapGesture()
+        setupKnotStateEditor()
     }
     
     func setupSideBar() {
@@ -53,6 +49,9 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
         parser.parse()
         sideBar = SideBar(sourceView: self.view,
                           sideBarItems: parser.knots, topDistance)
+        for recognizer in self.view.gestureRecognizers! {
+            recognizer.delegate = self
+        }
         sideBar.delegate = self
     }
     
@@ -61,6 +60,11 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
         oneFingerTapGestureRecognizer.numberOfTapsRequired = 1
         oneFingerTapGestureRecognizer.numberOfTouchesRequired = 1
         sceneView.addGestureRecognizer(oneFingerTapGestureRecognizer)
+    }
+    
+    func setupKnotStateEditor () {
+        knotStateEditor = KnotStateEditorAndPlayer(sideBar.sideBarTableViewController.items.count > 0 ? sideBar.sideBarTableViewController.items[0] : Knot([], UIImage(), "Knots not found"), view)
+        knotStateEditor?.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -107,7 +111,8 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
     }
     
     func sideBarDidSelectButtonAtIndex(index: Int) {
-        
+        knotStateEditor?.knot = sideBar.sideBarTableViewController.items[index]
+        sideBar.showSideBar(false)
     }
     
     @IBAction func didTapMenu(){
@@ -118,5 +123,17 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate {
         if sideBar.isSideBarOpen {
             sideBar.showSideBar(false)
         }
+    }
+    
+    // MARK: Filters gesture recognizing in case that someone swipes on the slider
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if touch.view?.isDescendant(of: knotStateEditor!.rootView) == true {
+            return false
+         }
+         return true
+    }
+    
+    func selectedKnotState(index: Int) {
+        
     }
 }

@@ -35,6 +35,8 @@
 		B370064924D4874B00AA4A9C /* BowlineKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064324D47D0800AA4A9C /* BowlineKnotTest.xml */; };
 		B370064A24D4874E00AA4A9C /* SheepshankKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064524D4867700AA4A9C /* SheepshankKnotTest.xml */; };
 		B370064B24D4875000AA4A9C /* CombinedTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064724D4874500AA4A9C /* CombinedTest.xml */; };
+		B370064D24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */; };
+		B370064F24D61B4500AA4A9C /* Rope1.dae in Resources */ = {isa = PBXBuildFile; fileRef = B370064E24D61B4500AA4A9C /* Rope1.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		B370064324D47D0800AA4A9C /* BowlineKnotTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BowlineKnotTest.xml; sourceTree = "<group>"; };
 		B370064524D4867700AA4A9C /* SheepshankKnotTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SheepshankKnotTest.xml; sourceTree = "<group>"; };
 		B370064724D4874500AA4A9C /* CombinedTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CombinedTest.xml; sourceTree = "<group>"; };
+		B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotStateEditorAndPlayer.swift; sourceTree = "<group>"; };
+		B370064E24D61B4500AA4A9C /* Rope1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Rope1.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 				B36FF50524CF7BE90046BD39 /* SideBarTableViewController.swift */,
 				B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */,
 				B3620DCC24D0E5F800B662C3 /* SideBar.swift */,
+				B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 		B370063124D396DA00AA4A9C /* KnotStates */ = {
 			isa = PBXGroup;
 			children = (
+				B370064E24D61B4500AA4A9C /* Rope1.dae */,
 			);
 			path = KnotStates;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 			files = (
 				B36FF4D424CCF1C40046BD39 /* art.scnassets in Resources */,
 				B3620DD524D0FB4700B662C3 /* SquareKnot.jpg in Resources */,
+				B370064F24D61B4500AA4A9C /* Rope1.dae in Resources */,
 				B370063924D3984900AA4A9C /* Sheepshank.jpg in Resources */,
 				B36FF4DE24CCF1C50046BD39 /* LaunchScreen.storyboard in Resources */,
 				B36FF4DB24CCF1C50046BD39 /* Assets.xcassets in Resources */,
@@ -327,6 +334,7 @@
 				B36FF50B24CF84160046BD39 /* KnotState.swift in Sources */,
 				B3620DCD24D0E5F800B662C3 /* SideBar.swift in Sources */,
 				B36FF50924CF7DDA0046BD39 /* Knot.swift in Sources */,
+				B370064D24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift in Sources */,
 				B370062C24D382A000AA4A9C /* KnotParser.swift in Sources */,
 				B3620DCB24D0B99D00B662C3 /* KnotTableViewCell.swift in Sources */,
 				B36FF50624CF7BE90046BD39 /* SideBarTableViewController.swift in Sources */,
