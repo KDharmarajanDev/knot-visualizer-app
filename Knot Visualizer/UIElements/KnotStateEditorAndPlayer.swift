@@ -105,6 +105,8 @@ class KnotStateEditorAndPlayer: NSObject {
         updateSliderToKnot()
         knotStateSlider.isContinuous = false
         knotStateSlider.addTarget(self, action: #selector(sliderValueDidChange(_:)), for: .valueChanged)
+        knotStateSlider.thumbTintColor = rootView.traitCollection.userInterfaceStyle == .dark ? .black : .white
+        knotStateSlider.maximumTrackTintColor = rootView.traitCollection.userInterfaceStyle == .dark ? .gray : .lightGray
         setupSliderConstraints()
     }
     

@@ -37,6 +37,7 @@
 		B370064B24D4875000AA4A9C /* CombinedTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064724D4874500AA4A9C /* CombinedTest.xml */; };
 		B370064D24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */; };
 		B370064F24D61B4500AA4A9C /* Rope1.dae in Resources */ = {isa = PBXBuildFile; fileRef = B370064E24D61B4500AA4A9C /* Rope1.dae */; };
+		B370065124D63B0A00AA4A9C /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370065024D63B0A00AA4A9C /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		B370064724D4874500AA4A9C /* CombinedTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CombinedTest.xml; sourceTree = "<group>"; };
 		B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotStateEditorAndPlayer.swift; sourceTree = "<group>"; };
 		B370064E24D61B4500AA4A9C /* Rope1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Rope1.dae; sourceTree = "<group>"; };
+		B370065024D63B0A00AA4A9C /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */,
 				B3620DCC24D0E5F800B662C3 /* SideBar.swift */,
 				B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */,
+				B370065024D63B0A00AA4A9C /* Toast.swift */,
 			);
 			path = UIElements;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				B370064D24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift in Sources */,
 				B370062C24D382A000AA4A9C /* KnotParser.swift in Sources */,
 				B3620DCB24D0B99D00B662C3 /* KnotTableViewCell.swift in Sources */,
+				B370065124D63B0A00AA4A9C /* Toast.swift in Sources */,
 				B36FF50624CF7BE90046BD39 /* SideBarTableViewController.swift in Sources */,
 				B36FF4D224CCF1C40046BD39 /* AppDelegate.swift in Sources */,
 			);
