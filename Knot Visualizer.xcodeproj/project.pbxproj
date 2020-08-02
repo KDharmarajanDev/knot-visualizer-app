@@ -36,7 +36,6 @@
 		B370064A24D4874E00AA4A9C /* SheepshankKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064524D4867700AA4A9C /* SheepshankKnotTest.xml */; };
 		B370064B24D4875000AA4A9C /* CombinedTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064724D4874500AA4A9C /* CombinedTest.xml */; };
 		B370064D24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */; };
-		B370064F24D61B4500AA4A9C /* Rope1.dae in Resources */ = {isa = PBXBuildFile; fileRef = B370064E24D61B4500AA4A9C /* Rope1.dae */; };
 		B370065124D63B0A00AA4A9C /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370065024D63B0A00AA4A9C /* Toast.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +77,6 @@
 		B370064524D4867700AA4A9C /* SheepshankKnotTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SheepshankKnotTest.xml; sourceTree = "<group>"; };
 		B370064724D4874500AA4A9C /* CombinedTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CombinedTest.xml; sourceTree = "<group>"; };
 		B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotStateEditorAndPlayer.swift; sourceTree = "<group>"; };
-		B370064E24D61B4500AA4A9C /* Rope1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = Rope1.dae; sourceTree = "<group>"; };
 		B370065024D63B0A00AA4A9C /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,7 +197,6 @@
 		B370063124D396DA00AA4A9C /* KnotStates */ = {
 			isa = PBXGroup;
 			children = (
-				B370064E24D61B4500AA4A9C /* Rope1.dae */,
 			);
 			path = KnotStates;
 			sourceTree = "<group>";
@@ -298,7 +295,6 @@
 			files = (
 				B36FF4D424CCF1C40046BD39 /* art.scnassets in Resources */,
 				B3620DD524D0FB4700B662C3 /* SquareKnot.jpg in Resources */,
-				B370064F24D61B4500AA4A9C /* Rope1.dae in Resources */,
 				B370063924D3984900AA4A9C /* Sheepshank.jpg in Resources */,
 				B36FF4DE24CCF1C50046BD39 /* LaunchScreen.storyboard in Resources */,
 				B36FF4DB24CCF1C50046BD39 /* Assets.xcassets in Resources */,

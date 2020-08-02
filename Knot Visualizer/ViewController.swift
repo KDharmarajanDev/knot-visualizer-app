@@ -17,6 +17,8 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate, UIGe
     
     let nameOfKnotXMLFile : String = "Knots"
     
+    var knotNode: SCNNode!
+    
     public var topDistance : CGFloat{
          get{
             let barHeight = navigationController?.navigationBar.frame.height ?? 0
@@ -72,7 +74,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate, UIGe
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-
+        configuration.planeDetection = [.horizontal, .vertical]
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -110,9 +112,16 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate, UIGe
         
     }
     
+    // MARK: These methods are called for various components being changed (functions of delegates)
     func sideBarDidSelectButtonAtIndex(index: Int) {
         knotStateEditor?.knot = sideBar.sideBarTableViewController.items[index]
+        knotStateEditor?.rootView.isHidden = false
         sideBar.showSideBar(false)
+        Toast.show("Tap on the screen to place the knot", self)
+    }
+    
+    func selectedKnotState(index: Int) {
+        replaceKnotStateNode(knotNode.position, sideBar.sideBarTableViewController.items[sideBar.selectedKnotIndex].knotStates[index])
     }
     
     @IBAction func didTapMenu(){
@@ -122,7 +131,45 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate, UIGe
     @objc func handleARViewTap(recognizer : UITapGestureRecognizer){
         if sideBar.isSideBarOpen {
             sideBar.showSideBar(false)
+        } else if sideBar.requestingInitialPlace {
+            let location = recognizer.location(in: sceneView)
+            let results = sceneView.hitTest(location, types: .featurePoint)
+            if let result = results.first {
+                if sideBar.sideBarTableViewController.items.count > 0 && sideBar.sideBarTableViewController.items[sideBar.selectedKnotIndex].knotStates.count > 0 {
+                    let knot: Knot = sideBar.sideBarTableViewController.items[sideBar.selectedKnotIndex]
+                    placeKnotState(result, knot.knotStates[knot.currIndex])
+                }
+            }
+            sideBar.requestingInitialPlace = false
         }
+    }
+    
+    // MARK: These methods are in charge of placing the KnotState within the world
+    func placeKnotState(_ result: ARHitTestResult, _ knotState: KnotState){
+        let transform = result.worldTransform
+        let planePosition = SCNVector3(x: transform.columns.3.x, y: transform.columns.3.y, z: transform.columns.3.z)
+        replaceKnotStateNode(planePosition, knotState)
+    }
+    
+    func replaceKnotStateNode(_ position: SCNVector3, _ knotState: KnotState) {
+        if knotNode != nil {
+            knotNode.removeFromParentNode()
+        }
+        knotNode = createKnotStateFromScene(position, knotState)!
+        sceneView.scene.rootNode.addChildNode(knotNode)
+    }
+    
+    func createKnotStateFromScene(_ position: SCNVector3, _ knotState: KnotState) -> SCNNode? {
+        guard let url = Bundle.main.url(forResource: knotState.nameOfModel, withExtension: "dae") else {
+            NSLog("Could not find knot state")
+            return nil
+        }
+        guard let node = SCNReferenceNode(url: url) else {
+            return nil
+        }
+        node.position = position
+        node.load()
+        return node
     }
     
     // MARK: Filters gesture recognizing in case that someone swipes on the slider
@@ -131,9 +178,5 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate, UIGe
             return false
          }
          return true
-    }
-    
-    func selectedKnotState(index: Int) {
-        
     }
 }

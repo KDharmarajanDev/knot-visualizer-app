@@ -25,6 +25,8 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
     var animator : UIDynamicAnimator!
     var delegate : SideBarDelegate?
     var isSideBarOpen : Bool = false
+    var requestingInitialPlace: Bool = false
+    var selectedKnotIndex: Int = 0
     
     override init() {
         super.init()
@@ -109,5 +111,7 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
     
     func sideBarControlDidSelectSection(_ indexPath: IndexPath) {
         delegate?.sideBarDidSelectButtonAtIndex(index: indexPath.row)
+        selectedKnotIndex = indexPath.row
+        requestingInitialPlace = true
     }
 }
