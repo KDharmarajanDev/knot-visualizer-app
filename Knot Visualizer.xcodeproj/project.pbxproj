@@ -37,6 +37,7 @@
 		B370064B24D4875000AA4A9C /* CombinedTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064724D4874500AA4A9C /* CombinedTest.xml */; };
 		B370064D24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */; };
 		B370065124D63B0A00AA4A9C /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370065024D63B0A00AA4A9C /* Toast.swift */; };
+		B370069324D7BE9300AA4A9C /* TestAnimation.dae in Resources */ = {isa = PBXBuildFile; fileRef = B370069224D7BE9300AA4A9C /* TestAnimation.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		B370064724D4874500AA4A9C /* CombinedTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CombinedTest.xml; sourceTree = "<group>"; };
 		B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotStateEditorAndPlayer.swift; sourceTree = "<group>"; };
 		B370065024D63B0A00AA4A9C /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		B370069224D7BE9300AA4A9C /* TestAnimation.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = TestAnimation.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		B370063124D396DA00AA4A9C /* KnotStates */ = {
 			isa = PBXGroup;
 			children = (
+				B370069224D7BE9300AA4A9C /* TestAnimation.dae */,
 			);
 			path = KnotStates;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				B370064B24D4875000AA4A9C /* CombinedTest.xml in Resources */,
 				B36FF4D924CCF1C40046BD39 /* Main.storyboard in Resources */,
 				B370063724D397DA00AA4A9C /* Bowline.jpeg in Resources */,
+				B370069324D7BE9300AA4A9C /* TestAnimation.dae in Resources */,
 				B370063B24D3998400AA4A9C /* Knots.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

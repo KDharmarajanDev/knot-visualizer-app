@@ -19,15 +19,6 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate, UIGe
     
     var knotNode: SCNNode!
     
-    public var topDistance : CGFloat{
-         get{
-            let barHeight = navigationController?.navigationBar.frame.height ?? 0
-            let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
-            let statusBarHeight = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
-            return barHeight + statusBarHeight
-         }
-    }
-    
     var sideBar : SideBar = SideBar()
     var knotStateEditor : KnotStateEditorAndPlayer?
     
@@ -50,7 +41,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate, UIGe
         let parser : KnotParser = KnotParser(nameOfKnotXMLFile)
         parser.parse()
         sideBar = SideBar(sourceView: self.view,
-                          sideBarItems: parser.knots, topDistance)
+                          sideBarItems: parser.knots)
         for recognizer in self.view.gestureRecognizers! {
             recognizer.delegate = self
         }

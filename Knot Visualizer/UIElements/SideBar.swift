@@ -17,30 +17,28 @@ import UIKit
 class SideBar: NSObject, SideBarTableViewControllerDelegate {
     
     let barWidth : CGFloat = 150.0
-    let sideBarTableViewTopInset : CGFloat = 0
     let sideBarContainerView : UIView = UIView()
     let sideBarTableViewController : SideBarTableViewController = SideBarTableViewController()
     
     var originView : UIView!
-    var animator : UIDynamicAnimator!
     var delegate : SideBarDelegate?
     var isSideBarOpen : Bool = false
     var requestingInitialPlace: Bool = false
     var selectedKnotIndex: Int = 0
     
+    var sideBarContainerViewCenterXAnchor: NSLayoutConstraint = NSLayoutConstraint()
+    
     override init() {
         super.init()
     }
 
-    init(sourceView : UIView, sideBarItems: Array<Knot>,_ navBarHeight : CGFloat?){
+    init(sourceView : UIView, sideBarItems: Array<Knot>){
         super.init()
         originView = sourceView
         sideBarTableViewController.items = sideBarItems
-        
-        setupSideBar(navBarHeight)
-        
-        animator = UIDynamicAnimator(referenceView: originView)
-        
+
+        setupSideBar()
+    
         let showGestureRecognizer : UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
         showGestureRecognizer.direction = UISwipeGestureRecognizer.Direction.right
         originView.addGestureRecognizer(showGestureRecognizer)
@@ -50,28 +48,58 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
         originView.addGestureRecognizer(hideGestureRecognizer)
     }
     
-    func setupSideBar(_ navBarHeight : CGFloat?) {
-        sideBarContainerView.frame = CGRect(x: -barWidth - 1, y: navBarHeight!, width: barWidth, height: originView.frame.size.height - navBarHeight!)
+    func setupSideBar() {
         sideBarContainerView.backgroundColor = UIColor.clear
         sideBarContainerView.clipsToBounds = false
-        
         originView.addSubview(sideBarContainerView)
+        setupContainerViewConstraints()
         
-        let blurView : UIVisualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffect.Style.light))
-        blurView.frame = sideBarContainerView.bounds
+        var blurView : UIVisualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffect.Style.light))
         sideBarContainerView.addSubview(blurView)
+        setupBlurViewConstraints(&blurView)
         
         sideBarTableViewController.delegate = self
-        sideBarTableViewController.tableView.frame = sideBarContainerView.bounds
         sideBarTableViewController.tableView.clipsToBounds = true
         sideBarTableViewController.tableView.backgroundColor = UIColor.clear
         sideBarTableViewController.tableView.separatorStyle = .none
         sideBarTableViewController.tableView.scrollsToTop = false
-        sideBarTableViewController.tableView.contentInset = UIEdgeInsets(top: sideBarTableViewTopInset, left: 0, bottom: 0, right: 0)
-        
         sideBarTableViewController.tableView.reloadData()
-        
         sideBarContainerView.addSubview(sideBarTableViewController.tableView)
+        setupTableViewConstraints()
+    }
+    
+    func setupContainerViewConstraints() {
+        sideBarContainerView.translatesAutoresizingMaskIntoConstraints = false
+        sideBarContainerViewCenterXAnchor = sideBarContainerView.centerXAnchor.constraint(equalTo: originView.leftAnchor, constant: -(barWidth / 2.0))
+        let constraints = [
+            sideBarContainerView.bottomAnchor.constraint(equalTo: originView.bottomAnchor),
+            sideBarContainerView.widthAnchor.constraint(equalToConstant: barWidth),
+            sideBarContainerView.topAnchor.constraint(equalTo: originView.safeAreaLayoutGuide.topAnchor),
+            sideBarContainerViewCenterXAnchor
+        ]
+        NSLayoutConstraint.activate(constraints)
+    }
+    
+    func setupBlurViewConstraints(_ blurView: inout UIVisualEffectView) {
+        blurView.translatesAutoresizingMaskIntoConstraints = false
+        let constraints = [
+            blurView.leftAnchor.constraint(equalTo: sideBarContainerView.leftAnchor),
+            blurView.rightAnchor.constraint(equalTo: sideBarContainerView.rightAnchor),
+            blurView.bottomAnchor.constraint(equalTo: sideBarContainerView.bottomAnchor),
+            blurView.topAnchor.constraint(equalTo: sideBarContainerView.topAnchor)
+        ]
+        NSLayoutConstraint.activate(constraints)
+    }
+    
+    func setupTableViewConstraints() {
+        sideBarTableViewController.tableView.translatesAutoresizingMaskIntoConstraints = false
+        let constraints = [
+            sideBarTableViewController.tableView.topAnchor.constraint(equalTo: sideBarContainerView.topAnchor),
+            sideBarTableViewController.tableView.bottomAnchor.constraint(equalTo: sideBarContainerView.bottomAnchor),
+            sideBarTableViewController.tableView.leftAnchor.constraint(equalTo: sideBarContainerView.leftAnchor),
+            sideBarTableViewController.tableView.rightAnchor.constraint(equalTo: sideBarContainerView.rightAnchor)
+        ]
+        NSLayoutConstraint.activate(constraints)
     }
     
     @objc func handleSwipe(recognizer : UISwipeGestureRecognizer) {
@@ -85,28 +113,12 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
     }
     
     func showSideBar(_ shouldOpen : Bool) {
-        animator.removeAllBehaviors()
         isSideBarOpen = shouldOpen
-        
-        let forceX : CGFloat = (shouldOpen) ? 0.5 : -0.5
-        let magnitude : CGFloat = (shouldOpen) ? 20 : -20
-        let boundaryX : CGFloat = (shouldOpen) ? barWidth : -barWidth - 1
-        
-        let forceBehavior : UIGravityBehavior = UIGravityBehavior(items: [sideBarContainerView])
-        forceBehavior.gravityDirection = CGVector(dx: forceX, dy: 0)
-        animator.addBehavior(forceBehavior)
-        
-        let collisionBehavior : UICollisionBehavior = UICollisionBehavior(items: [sideBarContainerView])
-        collisionBehavior.addBoundary(withIdentifier: "sideBarBoundary" as NSCopying, from: CGPoint(x: boundaryX, y: 20), to: CGPoint(x: boundaryX, y: originView.frame.size.height))
-        animator.addBehavior(collisionBehavior)
-        
-        let pushBehavior : UIPushBehavior = UIPushBehavior(items: [sideBarContainerView], mode: UIPushBehavior.Mode.instantaneous)
-        pushBehavior.magnitude = magnitude
-        animator.addBehavior(pushBehavior)
-        
-        let sideBarBehavior : UIDynamicItemBehavior = UIDynamicItemBehavior(items: [sideBarContainerView])
-        sideBarBehavior.elasticity = 0.3
-        animator.addBehavior(sideBarBehavior)
+        let centerXConstant = shouldOpen ? (barWidth/2.0): -(barWidth/2.0)
+        sideBarContainerViewCenterXAnchor.constant = centerXConstant
+        UIView.animate(withDuration: 1.25, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 5, animations: {
+            self.sideBarContainerView.superview?.layoutIfNeeded()
+        })
     }
     
     func sideBarControlDidSelectSection(_ indexPath: IndexPath) {

@@ -1,5 +1,6 @@
 <Knots>
     <Knot> Square Knot
         <Thumbnail>SquareKnot.jpg</Thumbnail>
+        <KnotState>TestAnimation</KnotState>
     </Knot>
 </Knots>

@@ -51,6 +51,7 @@ class KnotCell : UITableViewCell {
     
     func setupBackground() {
         self.backgroundColor = .clear
+        self.selectionStyle = .none
         self.contentView.backgroundColor = traitCollection.userInterfaceStyle == .dark ? .black : .white
         self.contentView.layer.cornerRadius = CGFloat(8.0)
     }

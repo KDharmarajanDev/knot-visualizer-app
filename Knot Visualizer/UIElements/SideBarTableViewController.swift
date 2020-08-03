@@ -20,7 +20,6 @@ class SideBarTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(KnotCell.self, forCellReuseIdentifier: "cell")
-        
         tableView.rowHeight = 130.0
     }
 
