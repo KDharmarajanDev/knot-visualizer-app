@@ -21,14 +21,10 @@
 		B36FF50B24CF84160046BD39 /* KnotState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF50A24CF84160046BD39 /* KnotState.swift */; };
 		B370062C24D382A000AA4A9C /* KnotParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370062B24D382A000AA4A9C /* KnotParser.swift */; };
 		B370062E24D393D700AA4A9C /* KnotParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370062D24D393D700AA4A9C /* KnotParserTest.swift */; };
-		B370063724D397DA00AA4A9C /* Bowline.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B370063624D397DA00AA4A9C /* Bowline.jpeg */; };
-		B370063924D3984900AA4A9C /* Sheepshank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B370063824D3984900AA4A9C /* Sheepshank.jpg */; };
 		B370063B24D3998400AA4A9C /* Knots.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370063A24D3998400AA4A9C /* Knots.xml */; };
 		B370063E24D399D600AA4A9C /* SquareKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370063D24D399D600AA4A9C /* SquareKnotTest.xml */; };
 		B370063F24D3DC2400AA4A9C /* SquareKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370063D24D399D600AA4A9C /* SquareKnotTest.xml */; };
 		B370064024D3DE6F00AA4A9C /* SquareKnot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3620DD424D0FB4700B662C3 /* SquareKnot.jpg */; };
-		B370064124D3DE7200AA4A9C /* Bowline.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B370063624D397DA00AA4A9C /* Bowline.jpeg */; };
-		B370064224D3DE7500AA4A9C /* Sheepshank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B370063824D3984900AA4A9C /* Sheepshank.jpg */; };
 		B370064424D47D0800AA4A9C /* BowlineKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064324D47D0800AA4A9C /* BowlineKnotTest.xml */; };
 		B370064624D4867700AA4A9C /* SheepshankKnotTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064524D4867700AA4A9C /* SheepshankKnotTest.xml */; };
 		B370064824D4874500AA4A9C /* CombinedTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064724D4874500AA4A9C /* CombinedTest.xml */; };
@@ -37,7 +33,12 @@
 		B370064B24D4875000AA4A9C /* CombinedTest.xml in Resources */ = {isa = PBXBuildFile; fileRef = B370064724D4874500AA4A9C /* CombinedTest.xml */; };
 		B370064D24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */; };
 		B370065124D63B0A00AA4A9C /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370065024D63B0A00AA4A9C /* Toast.swift */; };
-		B370069324D7BE9300AA4A9C /* TestAnimation.dae in Resources */ = {isa = PBXBuildFile; fileRef = B370069224D7BE9300AA4A9C /* TestAnimation.dae */; };
+		B37006A324D91F7500AA4A9C /* SquareKnotState1.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006A224D91F7500AA4A9C /* SquareKnotState1.dae */; };
+		B37006A624D9218600AA4A9C /* SquareKnotState3.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006A424D9218600AA4A9C /* SquareKnotState3.dae */; };
+		B37006A724D9218600AA4A9C /* SquareKnotState2.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006A524D9218600AA4A9C /* SquareKnotState2.dae */; };
+		B37006AF24D9237400AA4A9C /* SquareKnotState4.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006AE24D9237400AA4A9C /* SquareKnotState4.dae */; };
+		B37006B124D9249500AA4A9C /* SquareKnotState5.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006B024D9249500AA4A9C /* SquareKnotState5.dae */; };
+		B37006B524D927E600AA4A9C /* SquareKnotState6.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006B424D927E600AA4A9C /* SquareKnotState6.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +71,6 @@
 		B36FF50A24CF84160046BD39 /* KnotState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotState.swift; sourceTree = "<group>"; };
 		B370062B24D382A000AA4A9C /* KnotParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotParser.swift; sourceTree = "<group>"; };
 		B370062D24D393D700AA4A9C /* KnotParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotParserTest.swift; sourceTree = "<group>"; };
-		B370063624D397DA00AA4A9C /* Bowline.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bowline.jpeg; sourceTree = "<group>"; };
-		B370063824D3984900AA4A9C /* Sheepshank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sheepshank.jpg; sourceTree = "<group>"; };
 		B370063A24D3998400AA4A9C /* Knots.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Knots.xml; sourceTree = "<group>"; };
 		B370063D24D399D600AA4A9C /* SquareKnotTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SquareKnotTest.xml; sourceTree = "<group>"; };
 		B370064324D47D0800AA4A9C /* BowlineKnotTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BowlineKnotTest.xml; sourceTree = "<group>"; };
@@ -79,7 +78,12 @@
 		B370064724D4874500AA4A9C /* CombinedTest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CombinedTest.xml; sourceTree = "<group>"; };
 		B370064C24D4D62D00AA4A9C /* KnotStateEditorAndPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotStateEditorAndPlayer.swift; sourceTree = "<group>"; };
 		B370065024D63B0A00AA4A9C /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
-		B370069224D7BE9300AA4A9C /* TestAnimation.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = TestAnimation.dae; sourceTree = "<group>"; };
+		B37006A224D91F7500AA4A9C /* SquareKnotState1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = SquareKnotState1.dae; sourceTree = "<group>"; };
+		B37006A424D9218600AA4A9C /* SquareKnotState3.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = SquareKnotState3.dae; sourceTree = "<group>"; };
+		B37006A524D9218600AA4A9C /* SquareKnotState2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = SquareKnotState2.dae; sourceTree = "<group>"; };
+		B37006AE24D9237400AA4A9C /* SquareKnotState4.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = SquareKnotState4.dae; sourceTree = "<group>"; };
+		B37006B024D9249500AA4A9C /* SquareKnotState5.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = SquareKnotState5.dae; sourceTree = "<group>"; };
+		B37006B424D927E600AA4A9C /* SquareKnotState6.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = SquareKnotState6.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,8 +193,6 @@
 		B370063024D396CF00AA4A9C /* Thumbnails */ = {
 			isa = PBXGroup;
 			children = (
-				B370063824D3984900AA4A9C /* Sheepshank.jpg */,
-				B370063624D397DA00AA4A9C /* Bowline.jpeg */,
 				B3620DD424D0FB4700B662C3 /* SquareKnot.jpg */,
 			);
 			path = Thumbnails;
@@ -199,7 +201,12 @@
 		B370063124D396DA00AA4A9C /* KnotStates */ = {
 			isa = PBXGroup;
 			children = (
-				B370069224D7BE9300AA4A9C /* TestAnimation.dae */,
+				B37006A224D91F7500AA4A9C /* SquareKnotState1.dae */,
+				B37006A524D9218600AA4A9C /* SquareKnotState2.dae */,
+				B37006A424D9218600AA4A9C /* SquareKnotState3.dae */,
+				B37006AE24D9237400AA4A9C /* SquareKnotState4.dae */,
+				B37006B024D9249500AA4A9C /* SquareKnotState5.dae */,
+				B37006B424D927E600AA4A9C /* SquareKnotState6.dae */,
 			);
 			path = KnotStates;
 			sourceTree = "<group>";
@@ -298,16 +305,19 @@
 			files = (
 				B36FF4D424CCF1C40046BD39 /* art.scnassets in Resources */,
 				B3620DD524D0FB4700B662C3 /* SquareKnot.jpg in Resources */,
-				B370063924D3984900AA4A9C /* Sheepshank.jpg in Resources */,
 				B36FF4DE24CCF1C50046BD39 /* LaunchScreen.storyboard in Resources */,
 				B36FF4DB24CCF1C50046BD39 /* Assets.xcassets in Resources */,
+				B37006A624D9218600AA4A9C /* SquareKnotState3.dae in Resources */,
+				B37006B524D927E600AA4A9C /* SquareKnotState6.dae in Resources */,
+				B37006A724D9218600AA4A9C /* SquareKnotState2.dae in Resources */,
 				B370064A24D4874E00AA4A9C /* SheepshankKnotTest.xml in Resources */,
+				B37006A324D91F7500AA4A9C /* SquareKnotState1.dae in Resources */,
 				B370063F24D3DC2400AA4A9C /* SquareKnotTest.xml in Resources */,
 				B370064924D4874B00AA4A9C /* BowlineKnotTest.xml in Resources */,
 				B370064B24D4875000AA4A9C /* CombinedTest.xml in Resources */,
 				B36FF4D924CCF1C40046BD39 /* Main.storyboard in Resources */,
-				B370063724D397DA00AA4A9C /* Bowline.jpeg in Resources */,
-				B370069324D7BE9300AA4A9C /* TestAnimation.dae in Resources */,
+				B37006B124D9249500AA4A9C /* SquareKnotState5.dae in Resources */,
+				B37006AF24D9237400AA4A9C /* SquareKnotState4.dae in Resources */,
 				B370063B24D3998400AA4A9C /* Knots.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,12 +326,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B370064124D3DE7200AA4A9C /* Bowline.jpeg in Resources */,
 				B370064424D47D0800AA4A9C /* BowlineKnotTest.xml in Resources */,
 				B370064024D3DE6F00AA4A9C /* SquareKnot.jpg in Resources */,
 				B370064624D4867700AA4A9C /* SheepshankKnotTest.xml in Resources */,
 				B370063E24D399D600AA4A9C /* SquareKnotTest.xml in Resources */,
-				B370064224D3DE7500AA4A9C /* Sheepshank.jpg in Resources */,
 				B370064824D4874500AA4A9C /* CombinedTest.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
