@@ -8,4 +8,13 @@
         <KnotState>SquareKnotState5</KnotState>
         <KnotState>SquareKnotState6</KnotState>
     </Knot>
+    <Knot> Two Half Hitches
+        <Thumbnail>TwoHalfHitchesThumbnail.png</Thumbnail>
+        <KnotState>TwoHalfHitchState1</KnotState>
+        <KnotState>TwoHalfHitchState2</KnotState>
+        <KnotState>TwoHalfHitchState3</KnotState>
+        <KnotState>TwoHalfHitchState4</KnotState>
+        <KnotState>TwoHalfHitchState5</KnotState>
+        <KnotState>TwoHalfHitchState6</KnotState>
+    </Knot>
 </Knots>

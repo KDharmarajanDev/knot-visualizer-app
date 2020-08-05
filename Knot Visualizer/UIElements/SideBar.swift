@@ -116,7 +116,7 @@ class SideBar: NSObject, SideBarTableViewControllerDelegate {
         isSideBarOpen = shouldOpen
         let centerXConstant = shouldOpen ? (barWidth/2.0): -(barWidth/2.0)
         sideBarContainerViewCenterXAnchor.constant = centerXConstant
-        UIView.animate(withDuration: 1.25, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, animations: {
+        UIView.animate(withDuration: 1.25, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 4.5, animations: {
             self.sideBarContainerView.superview?.layoutIfNeeded()
         })
     }

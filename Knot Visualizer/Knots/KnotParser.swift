@@ -57,10 +57,11 @@ class KnotParser : NSObject, XMLParserDelegate {
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "Knot" {
-            knots.append(Knot(knotStates, UIImage(named: currImgName)! , currName))
+            knots.append(Knot(knotStates, UIImage(named: currImgName) ?? UIImage() , currName))
         } else if elementName == "KnotState" {
             knotStates.append(KnotState(currKnotStateName))
             currKnotStateName = ""
         }
     }
+    
 }

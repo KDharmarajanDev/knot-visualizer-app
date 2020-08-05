@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B301E99024DB1EB900A4BE1A /* TwoHalfHitchesThumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = B301E98F24DB1EB900A4BE1A /* TwoHalfHitchesThumbnail.png */; };
 		B3620DCB24D0B99D00B662C3 /* KnotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */; };
 		B3620DCD24D0E5F800B662C3 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3620DCC24D0E5F800B662C3 /* SideBar.swift */; };
 		B3620DD524D0FB4700B662C3 /* SquareKnot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3620DD424D0FB4700B662C3 /* SquareKnot.jpg */; };
@@ -39,6 +40,12 @@
 		B37006AF24D9237400AA4A9C /* SquareKnotState4.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006AE24D9237400AA4A9C /* SquareKnotState4.dae */; };
 		B37006B124D9249500AA4A9C /* SquareKnotState5.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006B024D9249500AA4A9C /* SquareKnotState5.dae */; };
 		B37006B524D927E600AA4A9C /* SquareKnotState6.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006B424D927E600AA4A9C /* SquareKnotState6.dae */; };
+		B37006B924D9CFA700AA4A9C /* TwoHalfHitchState1.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006B824D9CFA700AA4A9C /* TwoHalfHitchState1.dae */; };
+		B37006BB24D9D27300AA4A9C /* TwoHalfHitchState2.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006BA24D9D27200AA4A9C /* TwoHalfHitchState2.dae */; };
+		B37006BD24D9D5B300AA4A9C /* TwoHalfHitchState3.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006BC24D9D5B300AA4A9C /* TwoHalfHitchState3.dae */; };
+		B37006BF24D9DAEE00AA4A9C /* TwoHalfHitchState5.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006BE24D9DAEE00AA4A9C /* TwoHalfHitchState5.dae */; };
+		B37006C124D9DAF800AA4A9C /* TwoHalfHitchState4.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006C024D9DAF800AA4A9C /* TwoHalfHitchState4.dae */; };
+		B37006C324D9DDB200AA4A9C /* TwoHalfHitchState6.dae in Resources */ = {isa = PBXBuildFile; fileRef = B37006C224D9DDB200AA4A9C /* TwoHalfHitchState6.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B301E98F24DB1EB900A4BE1A /* TwoHalfHitchesThumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoHalfHitchesThumbnail.png; sourceTree = "<group>"; };
 		B3620DCA24D0B99D00B662C3 /* KnotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnotTableViewCell.swift; sourceTree = "<group>"; };
 		B3620DCC24D0E5F800B662C3 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		B3620DD424D0FB4700B662C3 /* SquareKnot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SquareKnot.jpg; sourceTree = "<group>"; };
@@ -84,6 +92,12 @@
 		B37006AE24D9237400AA4A9C /* SquareKnotState4.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = SquareKnotState4.dae; sourceTree = "<group>"; };
 		B37006B024D9249500AA4A9C /* SquareKnotState5.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = SquareKnotState5.dae; sourceTree = "<group>"; };
 		B37006B424D927E600AA4A9C /* SquareKnotState6.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = SquareKnotState6.dae; sourceTree = "<group>"; };
+		B37006B824D9CFA700AA4A9C /* TwoHalfHitchState1.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = TwoHalfHitchState1.dae; sourceTree = "<group>"; };
+		B37006BA24D9D27200AA4A9C /* TwoHalfHitchState2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = TwoHalfHitchState2.dae; sourceTree = "<group>"; };
+		B37006BC24D9D5B300AA4A9C /* TwoHalfHitchState3.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = TwoHalfHitchState3.dae; sourceTree = "<group>"; };
+		B37006BE24D9DAEE00AA4A9C /* TwoHalfHitchState5.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = TwoHalfHitchState5.dae; sourceTree = "<group>"; };
+		B37006C024D9DAF800AA4A9C /* TwoHalfHitchState4.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = TwoHalfHitchState4.dae; sourceTree = "<group>"; };
+		B37006C224D9DDB200AA4A9C /* TwoHalfHitchState6.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = TwoHalfHitchState6.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				B3620DD424D0FB4700B662C3 /* SquareKnot.jpg */,
+				B301E98F24DB1EB900A4BE1A /* TwoHalfHitchesThumbnail.png */,
 			);
 			path = Thumbnails;
 			sourceTree = "<group>";
@@ -201,12 +216,8 @@
 		B370063124D396DA00AA4A9C /* KnotStates */ = {
 			isa = PBXGroup;
 			children = (
-				B37006A224D91F7500AA4A9C /* SquareKnotState1.dae */,
-				B37006A524D9218600AA4A9C /* SquareKnotState2.dae */,
-				B37006A424D9218600AA4A9C /* SquareKnotState3.dae */,
-				B37006AE24D9237400AA4A9C /* SquareKnotState4.dae */,
-				B37006B024D9249500AA4A9C /* SquareKnotState5.dae */,
-				B37006B424D927E600AA4A9C /* SquareKnotState6.dae */,
+				B37006B724D9CF9A00AA4A9C /* Two Half-Hitches */,
+				B37006B624D9CF8B00AA4A9C /* Square Knot */,
 			);
 			path = KnotStates;
 			sourceTree = "<group>";
@@ -220,6 +231,32 @@
 				B370064724D4874500AA4A9C /* CombinedTest.xml */,
 			);
 			path = KnotParserXMLFiles;
+			sourceTree = "<group>";
+		};
+		B37006B624D9CF8B00AA4A9C /* Square Knot */ = {
+			isa = PBXGroup;
+			children = (
+				B37006A224D91F7500AA4A9C /* SquareKnotState1.dae */,
+				B37006A524D9218600AA4A9C /* SquareKnotState2.dae */,
+				B37006A424D9218600AA4A9C /* SquareKnotState3.dae */,
+				B37006AE24D9237400AA4A9C /* SquareKnotState4.dae */,
+				B37006B024D9249500AA4A9C /* SquareKnotState5.dae */,
+				B37006B424D927E600AA4A9C /* SquareKnotState6.dae */,
+			);
+			path = "Square Knot";
+			sourceTree = "<group>";
+		};
+		B37006B724D9CF9A00AA4A9C /* Two Half-Hitches */ = {
+			isa = PBXGroup;
+			children = (
+				B37006B824D9CFA700AA4A9C /* TwoHalfHitchState1.dae */,
+				B37006BA24D9D27200AA4A9C /* TwoHalfHitchState2.dae */,
+				B37006BC24D9D5B300AA4A9C /* TwoHalfHitchState3.dae */,
+				B37006C024D9DAF800AA4A9C /* TwoHalfHitchState4.dae */,
+				B37006BE24D9DAEE00AA4A9C /* TwoHalfHitchState5.dae */,
+				B37006C224D9DDB200AA4A9C /* TwoHalfHitchState6.dae */,
+			);
+			path = "Two Half-Hitches";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,16 +344,23 @@
 				B3620DD524D0FB4700B662C3 /* SquareKnot.jpg in Resources */,
 				B36FF4DE24CCF1C50046BD39 /* LaunchScreen.storyboard in Resources */,
 				B36FF4DB24CCF1C50046BD39 /* Assets.xcassets in Resources */,
+				B37006C324D9DDB200AA4A9C /* TwoHalfHitchState6.dae in Resources */,
 				B37006A624D9218600AA4A9C /* SquareKnotState3.dae in Resources */,
 				B37006B524D927E600AA4A9C /* SquareKnotState6.dae in Resources */,
+				B37006BB24D9D27300AA4A9C /* TwoHalfHitchState2.dae in Resources */,
 				B37006A724D9218600AA4A9C /* SquareKnotState2.dae in Resources */,
 				B370064A24D4874E00AA4A9C /* SheepshankKnotTest.xml in Resources */,
+				B37006B924D9CFA700AA4A9C /* TwoHalfHitchState1.dae in Resources */,
+				B37006C124D9DAF800AA4A9C /* TwoHalfHitchState4.dae in Resources */,
 				B37006A324D91F7500AA4A9C /* SquareKnotState1.dae in Resources */,
 				B370063F24D3DC2400AA4A9C /* SquareKnotTest.xml in Resources */,
+				B37006BD24D9D5B300AA4A9C /* TwoHalfHitchState3.dae in Resources */,
 				B370064924D4874B00AA4A9C /* BowlineKnotTest.xml in Resources */,
 				B370064B24D4875000AA4A9C /* CombinedTest.xml in Resources */,
+				B301E99024DB1EB900A4BE1A /* TwoHalfHitchesThumbnail.png in Resources */,
 				B36FF4D924CCF1C40046BD39 /* Main.storyboard in Resources */,
 				B37006B124D9249500AA4A9C /* SquareKnotState5.dae in Resources */,
+				B37006BF24D9DAEE00AA4A9C /* TwoHalfHitchState5.dae in Resources */,
 				B37006AF24D9237400AA4A9C /* SquareKnotState4.dae in Resources */,
 				B370063B24D3998400AA4A9C /* Knots.xml in Resources */,
 			);

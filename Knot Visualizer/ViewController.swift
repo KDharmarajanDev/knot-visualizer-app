@@ -160,6 +160,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, SideBarDelegate, UIGe
         }
         node.position = position
         node.load()
+        node.eulerAngles = SCNVector3(Double.pi/2, 0, 0)
         return node
     }
     
